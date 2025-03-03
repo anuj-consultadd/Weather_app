@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import WeatherCard from "./components/WeatherCard";
 import SearchBar from "./components/SearchBar.tsx";
-import WeatherDetails from "./components/WeatherDetailes.tsx";
+import WeatherDetails from "./components/WeatherDetails";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -53,13 +53,14 @@ const App: React.FC = () => {
 
   return (
     <div
-      className="flex min-h-screen w-full flex-col items-center justify-start gap-5 bg-cover bg-center bg-no-repeat p-10"
+    className="flex h-screen w-full flex-col items-center justify-start gap-5 bg-cover bg-center bg-no-repeat p-10 overflow-scroll"
+
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <ToastContainer />
       <button
         onClick={toggleTemperature}
-        className="mt-4 rounded-lg bg-white/30 px-6 py-2 font-semibold text-gray-500 shadow-sm shadow-gray-300 transition duration-300 ease-in-out hover:bg-white/50"
+        className="mt-4 rounded-lg bg-white/30 px-6 py-2 font-semibold text-black shadow-sm shadow-gray-300 transition duration-300 ease-in-out hover:bg-white/50"
       >
         Toggle °C / °F
       </button>

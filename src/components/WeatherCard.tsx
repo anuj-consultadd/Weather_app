@@ -62,7 +62,7 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ weather, isCelsius }) => {
             {weather.name}, {weather.sys.country}
           </p>
         </div>
-        <div className="transition-transform duration-300 ease-in-out hover:scale-125">
+        <div className="transition-transform sm:scale-75 md:scale-75  lg:scale-100 duration-300 ease-in-out hover:scale-125">
           {WeatherIcon}
         </div>
       </div>

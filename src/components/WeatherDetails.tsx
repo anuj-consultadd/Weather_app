@@ -26,7 +26,7 @@ const WeatherDetails: React.FC<WeatherDetailsProps> = ({
   const tempUnit = isCelsius ? "°C" : "°F";
 
   return (
-    <div className="flex w-full flex-col rounded-xl bg-white/30 p-5 backdrop-blur-2xl md:w-3/5 lg:w-[35%]">
+    <div className="flex  w-full flex-col rounded-xl bg-white/30 p-5 backdrop-blur-2xl md:w-3/5 lg:w-[35%]">
       <div
         className="flex cursor-pointer items-center justify-between"
         onClick={() => setIsOpen(!isOpen)}
